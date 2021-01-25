@@ -18,7 +18,7 @@ i {
 }
 @media screen and (min-width: 750px) {
   html {
-    font-size: 75px!important;
+    font-size: 75px !important;
   }
 }
 /*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
@@ -61,9 +61,9 @@ img {
   clear: both;
 }
 @font-face {
-  font-family: 'iconfont';
-  src: url('font/iconfont.eot');
-  src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff2') format('woff2'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
+  font-family: "iconfont";
+  src: url("font/iconfont.eot");
+  src: url("font/iconfont.eot?#iefix") format("embedded-opentype"), url("font/iconfont.woff2") format("woff2"), url("font/iconfont.woff") format("woff"), url("font/iconfont.ttf") format("truetype"), url("font/iconfont.svg#iconfont") format("svg");
 }
 .search {
   display: flex;
@@ -109,12 +109,27 @@ img {
 .nav {
   height: 0.946667rem;
   border-bottom: 1px solid #e8e8e8;
-  line-height: 0.946667rem;
+  position: relative;
+}
+.nav > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0.92rem;
+  width: 1.066667rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav > div i {
+  font-size: 0.453333rem;
 }
 .nav ul {
   display: flex;
   color: black;
   padding: 0 0.373333rem;
+  line-height: 0.946667rem;
 }
 .nav ul li {
   font-size: 0.453333rem;
@@ -125,4 +140,68 @@ img {
 }
 .nav ul .active a {
   color: red;
+}
+.news {
+  padding: 0.12rem 0.4rem;
+}
+.news h2 {
+  font-size: 0.4rem;
+  font-weight: normal;
+  color: black;
+}
+.news img {
+  width: 100%;
+}
+.news .imglist {
+  display: flex;
+  justify-content: space-between;
+}
+.news .imglist img {
+  width: 2.986667rem;
+  height: 1.946667rem;
+  border: 1px solid #cccccc;
+}
+.news .news_foot {
+  display: flex;
+  line-height: 0.72rem;
+  position: relative;
+  padding-bottom: 0.133333rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+.news .news_foot span {
+  font-size: 0.36rem;
+  color: #999999;
+  margin-right: 0.2rem;
+}
+.news .news_foot i {
+  width: 0.466667rem;
+  height: 0.346667rem;
+  background: url(img/err.jpg) no-repeat center center;
+  background-size: 0.466667rem auto;
+  position: absolute;
+  top: 0.146667rem;
+  right: 0;
+}
+.footnav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  background: white;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 1.186667rem;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #000;
+}
+.footnav > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.293333rem;
+  align-items: center;
+}
+.footnav > div i {
+  margin-top: 0.133333rem;
+  font-size: 0.573333rem;
+  line-height: 0.573333rem;
 }

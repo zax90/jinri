@@ -10,7 +10,7 @@ body {
 }
 em,
 i {
-    font-style: normal
+  font-style: normal;
 }
 
 /*点击高亮我们需要清除清除  设置为transparent 完成透明*/
@@ -18,12 +18,11 @@ i {
 * {
   -webkit-tap-highlight-color: transparent;
 }
-@media screen and (min-width:750px){
-  html{
-    font-size: 75px!important;
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
   }
 }
-
 
 /*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
 
@@ -37,7 +36,6 @@ input {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 /*禁用长按页面时的弹出菜单*/
 
@@ -74,82 +72,165 @@ img {
   clear: both;
 }
 @font-face {
-  font-family: 'iconfont';
-  src: url('font/iconfont.eot');
-  src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
-      url('font/iconfont.woff2') format('woff2'),
-      url('font/iconfont.woff') format('woff'),
-      url('font/iconfont.ttf') format('truetype'),
-      url('font/iconfont.svg#iconfont') format('svg');
+  font-family: "iconfont";
+  src: url("font/iconfont.eot");
+  src: url("font/iconfont.eot?#iefix") format("embedded-opentype"),
+    url("font/iconfont.woff2") format("woff2"),
+    url("font/iconfont.woff") format("woff"),
+    url("font/iconfont.ttf") format("truetype"),
+    url("font/iconfont.svg#iconfont") format("svg");
 }
-.search{
+.search {
   display: flex;
   height: 1.4rem;
   width: 10rem;
   background: #c44944;
-  > div{
-    &:nth-child(1){
-      flex:1;
+  > div {
+    &:nth-child(1) {
+      flex: 1;
       display: flex;
       width: 8.266667rem;
       height: 1.08rem;
       background: white;
-      align-self:center;
-      margin-left: .426667rem;
-      border-radius: .166667rem;
-      
-      span{
-        font-size: .426667rem;
+      align-self: center;
+      margin-left: 0.426667rem;
+      border-radius: 0.166667rem;
+
+      span {
+        font-size: 0.426667rem;
         line-height: 1.08rem;
-        margin-left: .1rem;
+        margin-left: 0.1rem;
       }
-      i{
-        font-size: .453333rem;
-        margin-left: .206667rem;
+      i {
+        font-size: 0.453333rem;
+        margin-left: 0.206667rem;
         align-self: center;
       }
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       width: 1.32rem;
       display: flex;
       flex-direction: column;
       color: white;
       text-align: center;
 
+      i {
+        font-size: 0.613333rem;
+        line-height: 0.613333rem;
+        margin-top: 0.24rem;
+      }
+      span {
+        font-size: 0.293333rem;
+      }
+    }
+  }
+}
+.nav {
+  height: 0.946667rem;
+  border-bottom: 1px solid #e8e8e8;
+
+  position: relative;
+  > div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: .92rem;
+    width: 1.066667rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i{
+      font-size:0.453333rem;
+      // line-height: .533333rem;
+      // border-left: 1px solid #000;
+    }
+    
+  }
+  ul {
+    display: flex;
+    color: black;
+    padding: 0 0.373333rem;
+    line-height: 0.946667rem;
+    li {
+      font-size: 0.453333rem;
+      a {
+        color: black;
+        padding: 0 0.266667rem;
+      }
+    }
+    .active {
+      a {
+        color: red;
+      }
+    }
+  }
+}
+.news {
+  padding: 0.12rem 0.4rem;
+
+  h2 {
+    font-size: 0.4rem;
+    font-weight: normal;
+    color: black;
+  }
+  img {
+    width: 100%;
+  }
+  .imglist{
+    display: flex;
+    justify-content: space-between;
+    img{
       
-      i{
-        font-size: .613333rem;
-        line-height: .613333rem;
-        margin-top: .24rem;
-      }
-      span{
-        font-size: .293333rem;
-      }
+      width: 2.986667rem;
+      height: 1.946667rem;
+      border: 1px solid #cccccc;
+      
+    }
+  }
+  .news_foot {
+    display: flex;
+    line-height: 0.72rem;
+    position: relative;
+    span {
+      font-size: 0.36rem;
+      color: #999999;
+      margin-right: 0.2rem;
+    }
+    padding-bottom: 0.133333rem;
+    border-bottom: 1px solid #e8e8e8;
+    i{
+      width: .466667rem;
+      height: .346667rem;
+      background: url(img/err.jpg) no-repeat center center;
+      background-size: .466667rem auto;
+      position: absolute;
+      top: .146667rem;
+      right: 0;
       
     }
   }
 }
-.nav{
-  height: .946667rem;
-  border-bottom: 1px solid #e8e8e8;
-  line-height: .946667rem;
-  ul{
+.footnav{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  background: white;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 1.186667rem;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #000;
+  > div{
     display: flex;
-    color: black;
-    padding: 0 .373333rem;
-    li{
-      font-size: .453333rem;
-      a{
-        color: black;
-        padding: 0 .266667rem;
-      }
-      
-    }
-    .active{
-      a{
-        color: red;
-      }
-      
+    flex-direction: column;
+    font-size: .293333rem;
+    align-items: center;
+    i{
+      margin-top: .133333rem;
+      font-size: .573333rem;
+      line-height: .573333rem;
     }
   }
 }
