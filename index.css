@@ -106,3 +106,23 @@ img {
 .search > div:nth-child(2) span {
   font-size: 0.293333rem;
 }
+.nav {
+  height: 0.946667rem;
+  border-bottom: 1px solid #e8e8e8;
+  line-height: 0.946667rem;
+}
+.nav ul {
+  display: flex;
+  color: black;
+  padding: 0 0.373333rem;
+}
+.nav ul li {
+  font-size: 0.453333rem;
+}
+.nav ul li a {
+  color: black;
+  padding: 0 0.266667rem;
+}
+.nav ul .active a {
+  color: red;
+}
