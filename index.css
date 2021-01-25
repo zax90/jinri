@@ -1,0 +1,108 @@
+body {
+  width: 100%;
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: -apple-system, Helvetica, sans-serif;
+  color: #666;
+  line-height: 1.5;
+}
+em,
+i {
+  font-style: normal;
+}
+/*点击高亮我们需要清除清除  设置为transparent 完成透明*/
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px!important;
+  }
+}
+/*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+input {
+  -webkit-appearance: none;
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*禁用长按页面时的弹出菜单*/
+img,
+a {
+  -webkit-touch-callout: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+* {
+  padding: 0;
+  margin: 0;
+  /* css3 盒子模型 */
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  line-height: 0;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('font/iconfont.eot');
+  src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff2') format('woff2'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
+}
+.search {
+  display: flex;
+  height: 1.4rem;
+  width: 10rem;
+  background: #c44944;
+}
+.search > div:nth-child(1) {
+  flex: 1;
+  display: flex;
+  width: 8.266667rem;
+  height: 1.08rem;
+  background: white;
+  align-self: center;
+  margin-left: 0.426667rem;
+  border-radius: 0.166667rem;
+}
+.search > div:nth-child(1) span {
+  font-size: 0.426667rem;
+  line-height: 1.08rem;
+  margin-left: 0.1rem;
+}
+.search > div:nth-child(1) i {
+  font-size: 0.453333rem;
+  margin-left: 0.206667rem;
+  align-self: center;
+}
+.search > div:nth-child(2) {
+  width: 1.32rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+.search > div:nth-child(2) i {
+  font-size: 0.613333rem;
+  line-height: 0.613333rem;
+  margin-top: 0.24rem;
+}
+.search > div:nth-child(2) span {
+  font-size: 0.293333rem;
+}
